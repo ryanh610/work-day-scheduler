@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Assets/css/style.css"/>
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <div class="row border" id="9" data-time="9">
+        <div class="col border" id="nineLeft">
+          9:00 am
+        </div>
+        <textarea class="form-control col-6 border entryBox" rows="3" id="nineEntry">
+        </textarea>
+        <div class="col border btn" id="nineBtn">
+          submit
+        </div>
+      </div>
+      <div class="row border" id="10" data-time="10">
+        <div class="col border" id="tenLeft">
+          10:00 am
+        </div>
+        <textarea class="form-control col-6 border entryBox" rows="3" id="tenEntry">
+        </textarea>
+        <div class="col border btn" id="tenBtn">
+          submit
+        </div>
+      </div>
+      <div class="row border" id="11" data-time="11">
+        <div class="col border" id="elevenLeft">
+          11:00 am
+        </div>
+        <textarea class="form-control col-6 border entryBox" rows="3" id="elevenEntry">
+        </textarea>
+        <div class="col border btn" id="elevenBtn">
+          submit
+        </div>
+      </div>
+      <div class="row border" id="12" data-time="12">
+        <div class="col border" id="twelveLeft">
+          12:00 pm
+        </div>
+        <textarea class="form-control col-6 border entryBox" rows="3" id="twelveEntry">
+        </textarea>
+        <div class="col border btn" id="twelveBtn">
+          submit
+        </div>
+      </div>
+      <div class="row border" id="13" data-time="13">
+        <div class="col border" id="thirteenLeft">
+          1:00 pm
+        </div>
+        <textarea class="form-control col-6 border entryBox" rows="3" id="thirteenEntry">
+        </textarea>
+        <div class="col border btn" id="thirteenBtn">
+          submit
+        </div>
+      </div>
+      <div class="row border" id="14" data-time="14">
+        <div class="col border" id="fourteenLeft">
+          2:00 pm
+        </div>
+        <textarea class="form-control col-6 border entryBox" rows="3" id="fourteenEntry">
+        </textarea>
+        <div class="col border btn" id="fourteenBtn">
+          submit
+        </div>
+      </div>
+      <div class="row border" id="15" data-time="15">
+        <div class="col border" id="fifteenLeft">
+          3:00 pm
+        </div>
+        <textarea class="form-control col-6 border entryBox" rows="3" id="fifteenEntry">
+        </textarea>
+        <div class="col border btn" id="fifteenBtn">
+          submit
+        </div>
+      </div>
+      <div class="row border" id="16" data-time="16">
+        <div class="col border" id="sixteenLeft">
+          4:00 pm
+        </div>
+        <textarea class="form-control col-6 border entryBox" rows="3" id="sixteenEntry">
+        </textarea>
+        <div class="col border btn" id="sixteenBtn">
+          submit
+        </div>
+      </div>
+      <div class="row border" id="17" data-time="17">
+        <div class="col border" id="seventeenLeft">
+          5:00 pm
+        </div>
+        <textarea class="form-control col-6 border entryBox" rows="3" id="seventeenEntry">
+        </textarea>
+        <div class="col border btn" id="seventeenBtn">
+          submit
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./Assets/script.js"></script>
+  </body>
+</html>

@@ -1,8 +1,3 @@
-// WHEN I click the save button for that timeblock
-// THEN the text for that event is saved in local storage
-// WHEN I refresh the page
-// THEN the saved events persist
-
 var nine = $('#9')
 var ten = $('#10')
 var eleven = $('#11')
@@ -18,7 +13,7 @@ var textBox = $('.entryBox')
 
 var currentDay = moment().format("[Today is] dddd, MMMM Do");
 $("#currentDay").text(currentDay);
-var currentHour = moment().format("H");
+var currentHour = 13;
 
 times.forEach(timeTable);
 
@@ -47,9 +42,6 @@ function submission(event) {
     }
     else {
         entries = JSON.parse(entries);
-        // iterate through the entries list for the matching time that we have,
-        // if it does exist, then modify it within the array
-        // OR if it does exist, then remove it, and then append the new one
         var wasFound = false;
         for (var i = 0; i < entries.length; i++) {
             if (content.time === entries[i].time) {
@@ -70,10 +62,6 @@ function submission(event) {
 buttons.on("click", submission);
 textBox.submit(submission);
 
-// Run once on refresh
-// get item entries
-// if it is undefined, dont do anything
-// if it is a list, then iterate through the list, and populate the respective DOM objects
 function refresh() {
     var entries = localStorage.getItem("entries");
     if (entries === undefined) {
